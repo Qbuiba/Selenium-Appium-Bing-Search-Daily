@@ -40,6 +40,43 @@ This project contains two sections: Selenium to interact with the Edge browser a
 
 
 ## PART 2: APPIUM
+- [Installation](#installation)
+
+1. Clone the repository:
+```bash
+ git clone https://github.com/Qbuiba/Selenium-Appium-Bing-Search-Daily.git
+```
+
+2. Install dependencies:
+- Install Appium Server: https://appium.io/docs/en/2.0/quickstart/install/
+- Install Appium Inspector tool: https://github.com/appium/appium-inspector/releases (Optional: this tool is used to catching the Xpath of elenment in mobile application)
+- Install Appium DashBoard plugin: https://github.com/sudharsan-selvaraj/appium-dashboard-plugin (Optional: this tool for monitor the running session of Appium at local host: )
+  
+- [Usage](#usage)
+1. Start the Appium server:
+- Open terminal, run the command: 
+`appium server --address localhost --port 4723 --use-drivers uiautomator2 --base-path /wd/hub --use-plugins appium-dashboard`
+
+or if you don't want to start Appium dashboard
+`appium server --address localhost --port 4723 --use-drivers uiautomator2 --base-path /wd/hub`
+
+![image](https://github.com/Qbuiba/Selenium-Appium-Bing-Search-Daily/assets/37890918/15d95df1-6178-4333-9b89-ebf6b006a4fc)
+
+2. Connect your Android phone to laptop by cable, remember to open debugging mode of your phone: https://developer.android.com/studio/debug/dev-options
+
+3. Copy any long paragraph (more than 30 sentences) and paste it into dataForBingSearch.txt. This file is parsed into multiple sentences for every search.
+   
+![image](https://github.com/Qbuiba/Selenium-Appium-Bing-Search-Daily/assets/37890918/ec0a9758-926b-4826-9e7b-277219a3cb56)
+
+4. Click on the Run icon next to the method to running the test
+
+5. Access to http://localhost:4723/dashboard to view the running session
+
+![image](https://github.com/Qbuiba/Selenium-Appium-Bing-Search-Daily/assets/37890918/ea12001e-d134-47e0-871c-2e22d12595aa)
+
+
+That is it, enjoy to seek for Microsoft points, have a good day !
+
 
 ## CONTRIBUTING
 You can contribute to the code by adding more features and functions:
