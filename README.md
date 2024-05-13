@@ -75,7 +75,7 @@ or if you don't want to start Appium dashboard
 ![image](https://github.com/Qbuiba/Selenium-Appium-Bing-Search-Daily/assets/37890918/ea12001e-d134-47e0-871c-2e22d12595aa)
 
 
-That is it, enjoy to seek for Microsoft points, have a good day !
+That's it! Enjoy earning Microsoft points. Have a good day!
 
 
 ## CONTRIBUTING
