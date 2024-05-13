@@ -34,12 +34,25 @@ This project contains two sections: Selenium to interact with the Edge browser a
 
 ![image](https://github.com/Qbuiba/Selenium-Appium-Bing-Search-Daily/assets/37890918/bd82636e-cebd-4712-b66b-b5db0f42b5b5)
 
+3. It will running like this
+
+![image](https://github.com/Qbuiba/Selenium-Appium-Bing-Search-Daily/assets/37890918/d0e4d7e2-fa05-459d-86d7-a53ba181eaad)
 
 
+## PART 2: APPIUM
 
-## Table of Contents
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
+## CONTRIBUTING
+You can contribute to the code by adding more features and functions:
+
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature-name`.
+3. Make your changes.
+4. Push your branch: `git push origin feature-name`.
+5. Create a pull request.
+
+ ## LICENSE
 - [License](#license)
+This project is just a free-time project for fun, not under any license.
+
+
 
