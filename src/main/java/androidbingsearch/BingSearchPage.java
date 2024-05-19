@@ -32,6 +32,10 @@ public class BingSearchPage {
         searchboxHeader.sendKeys(strKey);
     }
 
+    public void clearSearchHeader() {
+        searchboxHome.clear();
+    }
+
     public void clearSubmitForm() {
         submitForm.clear();
     }

@@ -5,6 +5,7 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -33,32 +34,51 @@ public class BingWebSearch {
 
     @BeforeClass
     public static void setUp() {
+        // Specify the path to the WebDriver executable file
+        System.setProperty("webdriver.edge.driver", "D:\\HappyCoding\\BingRewardJune\\msedgedriver.exe");
         driver = new EdgeDriver();
         wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-        driver.manage().window().maximize();
+        driver.manage()
+                .window()
+                .maximize();
     }
 
 
     @Test
     public void testBingSearch() throws InterruptedException, IOException {
 
-        driver.navigate().to(bingURL);
-        Thread.sleep(3000);
+        driver.navigate()
+                .to(bingURL);
+        Thread.sleep(10000);
 
 
         List<String> dataSearch = Reader.dataSearch(fileName);
         int count = 1;
         for (String e : dataSearch) {
-            driver.navigate().to(bingURL);
-            Thread.sleep(2000);
+            driver.navigate()
+                    .to(bingURL);
+            Thread.sleep(10000);
             searchTextbox = driver.findElement(By.id("sb_form_q"));
             searchTextbox.clear();
             searchTextbox.sendKeys(e);
             System.out.println(e);
             searchTextbox.submit();
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='b_results']")));
+            // Get the height of the current document
+            Long documentHeight = (Long) ((JavascriptExecutor) driver).executeScript("return document.body.scrollHeight");
+
+            // Set the scrolling increment
+            int scrollIncrement = 100;
+
+            // Scroll gradually to the end of the page
+            for (int i = 0; i < documentHeight; i += scrollIncrement) {
+                ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, " + i + ")");
+                Thread.sleep(50); // Adjust this value to control the scrolling speed
+            }
+
             System.out.println("Search time: " + count++);
-            Thread.sleep(3000);
+
+            Thread.sleep(10000);
         }
 
     }
@@ -66,7 +86,8 @@ public class BingWebSearch {
     @Test
     public void testWeatherCategories() throws InterruptedException {
 
-        driver.navigate().to(weatherStartPage);
+        driver.navigate()
+                .to(weatherStartPage);
         Thread.sleep(5000);
 
         categoriesButtons = driver.findElements(By.xpath(listButtonXpath));

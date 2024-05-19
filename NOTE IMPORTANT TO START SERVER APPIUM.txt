@@ -1,2 +1,92 @@
-COMMAND LINE TO START APPIUM SERVER:
-appium --base-path /wd/hub 
+HOW TO INSTALLING APPIUM-DASHBOARD PLUGIN
+
+Using npm  to download appium-dashboard
+npm install appium-dashboard
+
+Installation
+This plugin requires Appium version 2.0. Once appium 2.0 is installed, run the bellow command to install the plugin
+
+appium plugin install --source=npm appium-dashboard
+
+
+Plugin Activation
+Once the installion is done, the plugin needs to be activated each time when the appium server is started using below command
+
+USING THIS COMMAND TO RUN appium and active dashboard
+
+appium server --address localhost --port 4723 --use-drivers uiautomator2 --base-path /wd/hub --use-plugins appium-dashboard
+
+
+JENKINS instance of EC2
+http://ec2-3-129-13-154.us-east-2.compute.amazonaws.com:8080/
+
+Personal Token in GitHub Generated:
+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
+
+UPDATE THE GIT URL INPUT IN JENKINS:
+https://<access token>@github.com/<user-name>/<repo-name>.git
+
+https://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@github.com/Qbuiba/spring-microservices.git
+
+
+Reward credentials
+Claim Code
+EFH7-7Y3YFT-D6AT
+
+
+Did X (task) for x module/component/subproject using Y (technologies) accomplish Z (outcome/benefit/achievement)
+
+•	Every job title shall have 5-7 bullet points.
+•	The bullet points shall be task specific e.g. Performed Regression test for Advanced Search for cars listing.
+•	Explain what technologies you used to perform the task and what you accomplished/achieved/outcome/benefit of the task. The outcome can be something measurable or immeasurable e.g. improved processing time by 50%, won an award or saved $1M in expenses.
+•	ATS looks for measurable results in your resume.
+
+
+
+ZaloPay
+- Automated test scenarios for mobile payment transactions between services in the microservices system for merchants, cashiers, and promotion services, using Rest-Assured in Java for API testing and Appium for Mobile UI testing, accomplish cover 100% of test cases.
+- Developed performance test scripts for cashier payment and applied promotion using the K6 framework in JavaScript, ensuring the system can handle up to 20k transactions smoothly.
+- Implemented testing modules checking of fee features for User Fee and Service Fee, using Rest-Assured and Appium frameworks in Java, cover 100% all scenarios.
+- Conducted regression testing, acceptance testing, and exploratory testing on the mobile application to ensure a bug-free experience before submission to the app store.
+- Configured and deployed jobs on Jenkins to run nightly or weekly test suites, aiding in the early detection of bugs.
+- Analyzed daily and weekly automation test reports using Jenkins and generated defect reports accordingly.
+- Collaborated in an Agile manner with cross-functional teams, actively participating in 100% of daily scrum meetings.
+
+FPT
+- Implemented automation scenarios for adding, updating, deleting, and purchasing a car in a microservices system for buying and selling cars, utilizing the Rest-assured API Java framework. Ensured coverage of 100% of all scenarios.
+- Developed a module for the testing framework to enable integration with AWS S3, enhancing the framework's capability to cover more test cases.
+- Conducted Integration testing between services whenever new services were added to the system.
+- Monitored bug reports, analyzed existing defects, and ensured that 100% of test scripts were up to date.
+- Collaborated in an Agile manner with cross-functional teams during sprints, participating in 100% of daily scrum meetings.
+- Provided guidance, knowledge transfer, and support to team members throughout the project, managing two team members.
+
+AWS
+- Developed and executed automation test scripts for features such as creating new policies, creating claims, and updating policies and claims on an insurance web application, utilizing the Robot Framework with Python KDD. Ensured coverage of 100% of regression and system test suite cases.
+- Developed a performance test script to evaluate the end-to-end insurance policy flow on the Neustar system, using JavaScript to ensure the system can handle up to 2000 broker calls simultaneously while maintaining normal functionality.
+- Conducted system tests in every release to ensure that no major bugs leaked into production.
+- Implemented and configured test runs using CI/CD Jenkins to facilitate daily and weekly job execution.
+- Collaborated in an Agile manner with cross-functional teams during sprints, participating in 100% of daily scrum meetings.
+
+
+Titan
+- Conduct feature, regression, and system testing for auditing a web application, covering functionalities such as creating, updating, and deleting tasks, auditors, companies, and planning components.
+- Implemented test scripts to evaluate the UI functionality of the web application using the Cucumber and Selenium Java framework, resulting in an 80% reduction in manual testing efforts per sprint.
+- Created test plans and test coverage for the team in every sprint.
+- Analyzed bug reports, then labeled the priority and severity of bugs to determine which ones should be addressed in the next sprint.
+- Collaborated in an Agile manner with cross-functional teams during sprints, participating in 100% of daily scrum meetings.
+
+
+S3
+- Implemented automated scenarios for adding to cart, favoriting products, purchasing products, and searching for a web application using Selenium Java and KDD (Keyword-Driven Development) technologies, ensuring coverage of 100% of defined test cases.
+- Performed Regression testing, Integration testing, and Acceptance testing during every sprint to ensure no bugs leaked into production.
+- Implemented more keywords for functional tasks such as search and viewing purchase history to enhance the KDD framework using Java, making it more accessible for other testers.
+- Reviewed daily/weekly automation suite reports, analyzed and reported defects to ensure that 100% of test scripts remained up to date.
+- Collaborated in an Agile manner with cross-functional teams during sprints and participated in 100% of daily scrum meetings.
+
+TMA
+- Performed the load test scenario on Avaya Private Automatic Branch Exchange (PABX) using SoapUI and JMeter Java to ensure the system operates normally under a load of 3000 simultaneous calls.
+- Performed daily Sanity Testing on builds to ensure stability for the next stage of testing.
+- Conducted installation testing to verify seamless upgrade and downgrade processes, ensuring no issues during production installation.
+- Implemented communication handshake between two nodes in a 4G telecom system using Bash, achieving a 100% successful connection between the nodes.
+- Set up Windows Server and installed Avaya Software in a lab environment.
+
