@@ -1,3 +1,0 @@
-Stream API’s operations are broadly categorized into two types based on their behavior.
-Intermediate operations & Terminal operations.
-Intermediate Operations

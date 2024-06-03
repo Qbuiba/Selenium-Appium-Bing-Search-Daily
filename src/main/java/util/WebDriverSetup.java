@@ -1,10 +1,16 @@
 package util;
 
 import config.WebConfig;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.time.Duration;
+import java.util.List;
 
 public class WebDriverSetup {
 
@@ -30,7 +36,9 @@ public class WebDriverSetup {
     }
 
     public static void tearDown() {
+        // Kill the browser and quit the WebDriver
         if (driver != null) {
+            driver.close();
             driver.quit();
         }
     }

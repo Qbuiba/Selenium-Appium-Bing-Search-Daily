@@ -16,8 +16,7 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.util.List;
 
-import static config.WebConfig.FILE_NAME;
-import static config.WebConfig.SEARCH_PATH;
+import static config.WebConfig.*;
 import static util.AndroidDriverSetup.driver;
 
 
@@ -31,7 +30,7 @@ public class BingAndroidSearch {
     @Test
     public void androidBingSearch() throws InterruptedException, IOException {
         BingSearchPageAndroid searchPage = new BingSearchPageAndroid(driver);
-        List<String> dataSearch = Reader.dataSearch(SEARCH_PATH + FILE_NAME);
+        List<String> dataSearch = Reader.dataSearch(SEARCH_PATH + ANDROID_FILE_NAME);
 
         for (String searchTerm : dataSearch) {
             System.out.println(searchTerm);
