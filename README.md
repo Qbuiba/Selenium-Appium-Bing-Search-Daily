@@ -9,6 +9,11 @@ With these points, users can redeem rewards such as Amazon or Microsoft gift car
 
 ![image](https://github.com/Qbuiba/Selenium-Appium-Bing-Search-Daily/assets/37890918/174042a2-f991-443e-9b02-3aa05c22984d)
 
+## PART 0: HOW TO RUN TEST CASES:
+![image](https://github.com/Qbuiba/Selenium-Appium-Bing-Search-Daily/assets/37890918/feee8edf-d766-4d2e-adcd-0d1eec08de02)
+
+![image](https://github.com/Qbuiba/Selenium-Appium-Bing-Search-Daily/assets/37890918/a33fab6f-f4dd-48bd-a118-f37b883172bc)
+
 
 This project contains two sections: Selenium to interact with the Edge browser and Appium to interact with Android phones.
 
