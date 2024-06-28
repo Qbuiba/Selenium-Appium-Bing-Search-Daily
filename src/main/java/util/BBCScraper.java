@@ -30,14 +30,15 @@ public class BBCScraper {
             Thread.sleep(5000);  // Wait for the page to load
 
             // Click on the first article
-            WebElement firstArticle = driver.findElement(By.xpath("(//a[contains(@href, '/news/articles')])[1]"));
-            WebElement secondArticle = driver.findElement(By.xpath("(//a[contains(@href, '/news/articles')])[2]"));
+//            WebElement firstArticle = driver.findElement(By.xpath("(//a[contains(@href, '/news/articles')])[3]"));
+//            WebElement secondArticle = driver.findElement(By.xpath("(//a[contains(@href, '/news/articles')])[4]"));
 
             List<WebElement> articles = new ArrayList<>();
-            articles.add(firstArticle);
-            articles.add(secondArticle);
+            articles = driver.findElements(By.xpath("//a[contains(@href, '/news/articles')]"));
+//            articles.add(firstArticle);
+//            articles.add(secondArticle);
             if (articles.size() >= 2) {
-                articles.get(0)
+                articles.get(5)
                         .click();
                 Thread.sleep(5000);  // Wait for the article page to load
 
@@ -52,7 +53,7 @@ public class BBCScraper {
                 Thread.sleep(5000);  // Wait for the page to load
 
                 // Click on the second article
-                articles.get(1)
+                articles.get(6)
                         .click();
                 Thread.sleep(5000);  // Wait for the article page to load
 

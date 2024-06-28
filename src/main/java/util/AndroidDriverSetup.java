@@ -14,6 +14,10 @@ public class AndroidDriverSetup {
     public static AppiumDriver driver;
 
     public static void initializeDriver() throws MalformedURLException, InterruptedException {
+        if (driver != null) {
+            driver.quit();
+        }
+        
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability(MobileCapabilityType.DEVICE_NAME, DEVICE_NAME);
         caps.setCapability(MobileCapabilityType.PLATFORM_NAME, PLATFORM_NAME);
